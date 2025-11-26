@@ -1,16 +1,41 @@
-# React + Vite
+# Генератор случайных цитат
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простое React‑приложение, позволяющее генерировать случайные цитаты по кнопке, а также сохранять понравившиеся цитаты в список избранного. 
 
-Currently, two official plugins are available:
+## 📌 Основные возможности
+- Получение случайной цитаты
+- Отображение автора
+- Кнопка для добавления цитаты в избранное
+- Список избранных цитат сбоку
+- Сохранение избранного в `localStorage`, чтобы данные не пропадали при перезагрузке страницы
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Особенности реализации
+- Использованы функциональные компоненты React
+- Управление состоянием через `useState`
+- Сохранение и загрузка данных через `useEffect` и `localStorage`
+- Адаптивная вёрстка: основной блок не растягивается от увеличения списка избранного
 
-## React Compiler
+## 🖼 Скриншот приложения
+![screenshot](./screenshot.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Структура проекта
+```
+project/
+│ src/
+│   ├── components/
+│   │     ├── QuoteBox.jsx
+│   │     └── Favorites.jsx
+│   ├── App.jsx
+│   ├── quotes.js
+│   ├── index.js
+│   └── App.css
+│
+├── public/
+│     └── index.html
+│
+├── README.md
+└── package.json
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✔ Выводы
+В ходе выполнения контрольной работы было создано React‑приложение, демонстрирующее работу с компонентами, событиями, состоянием и локальным хранилищем. Реализована базовая архитектура и простая адаптивная вёрстка. Работа соответствует требованиям задания.

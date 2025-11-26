@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+  font-family: "Inter", Arial, sans-serif;
+  background: #eef1f7;
+  margin: 0;
+  padding: 0;
+  color: #1e1e1e;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.header p {
+
+  color: #555;
+  font-size: 16px;
+}
+
+.main {
+  display: flex;
+  gap: 24px;
+}
+
+.quote-box {
+  flex: 2;
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  align-self: flex-start;
+}
+
+.quote-text {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.quote-author {
+  text-align: right;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.controls button {
+  background: #111;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.controls button:hover {
+  background: #333;
+}
+
+.favorites {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+}
+
+.favorites h3 {
+  margin-top: 0;
+}
+
+.empty {
+  color: #888;
+}
+
+.fav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fav-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.fav-item:hover {
+  background: #f5f7fa;
+}
+
+.fav-text {
+  margin: 0;
+  font-weight: 500;
+}
+
+.fav-author {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+@media (max-width: 850px) {
+  .main {
+    flex-direction: column;
+  }
+}
